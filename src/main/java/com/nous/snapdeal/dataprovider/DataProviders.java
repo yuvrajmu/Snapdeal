@@ -8,8 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.testng.annotations.DataProvider;
-
-import com.nous.sanpdeal.utility.NewExcelLibrary;
+import com.nous.snapdeal.utility.NewExcelLibrary;
 
 
 public class DataProviders {

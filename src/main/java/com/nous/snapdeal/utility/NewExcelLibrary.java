@@ -3,15 +3,17 @@ package com.nous.snapdeal.utility;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.Calendar;
-import org.apache.poi.hssf.usermodel.HSSFDateUtil;
+
+
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFCellStyle;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.apache.poi.hssf.usermodel.HSSFDateUtil;
 
 public class NewExcelLibrary {
-	
+	//import org.apache.poi.hssf.usermodel.HSSFDateUtil;
 	public static String path = System.getProperty("user.dir") + "\\src\\test\\resources\\TestData\\TestData.xlsx";
 
 //	public  String path;

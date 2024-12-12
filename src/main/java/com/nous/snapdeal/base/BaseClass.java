@@ -5,10 +5,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.xml.DOMConfigurator;
-import org.ietf.jgss.Oid;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -16,12 +14,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 
-
-import com.beust.jcommander.Parameter;
-import com.nous.snapdeal.actiondriver.Action;
 import com.nous.snapdeal.utility.ExtentManager;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -77,12 +70,14 @@ public class BaseClass {
 		//Delete all the cookies
 		getDriver().manage().deleteAllCookies();
 		//Implicit TimeOuts
-		getDriver().manage().timeouts().implicitlyWait
+		
+		
+	/*	getDriver().manage().timeouts().implicitlyWait
 		(Integer.parseInt(prop.getProperty("implicitWait")),TimeUnit.SECONDS);
 		//PageLoad TimeOuts
 		getDriver().manage().timeouts().pageLoadTimeout
 		(Integer.parseInt(prop.getProperty("pageLoadTimeOut")),TimeUnit.SECONDS);
-		//Launching the URL
+		//Launching the URL */
 		getDriver().get(prop.getProperty("url"));
 	}
 

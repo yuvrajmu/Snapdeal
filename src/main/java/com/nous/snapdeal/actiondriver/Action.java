@@ -314,8 +314,7 @@ public class Action extends BaseClass implements ActionInterface {
 		public boolean switchToFrameByIndex(WebDriver driver,int index) {
 			boolean flag = false;
 			try {
-				new WebDriverWait(driver, 15).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe")));
-				driver.switchTo().frame(index);
+				new  WebDriverWait(driver, 15).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe")));
 				flag = true;
 				return true;
 			} catch (Exception e) {
@@ -786,4 +785,4 @@ public class Action extends BaseClass implements ActionInterface {
 	
 	
 	
-}
+
